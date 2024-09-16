@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGN UP Page</title>
+    <link rel="stylesheet" href="login.css">
+    </head>
+        <body>
+            <div class="right">
+                <div class="container">
+                    <h1 style="color: aliceblue;">Log in</h1>
+                     <h3 style="color:rgb(247, 244, 244);">Please fill in this form to Log in your account.</h3>
+
+         <label for="email"><b>Email Address:</b></label>
+        <br>
+        <input type="text" placeholder="Enter your email address" name="email" required>
+        <br>
+        <label for="pass">Password: </label>
+        
+        <br>
+        <div class="input-box">
+            <input type="password" id="pass" placeholder="Enter Password">
+          <img src="hide.png" id="eye">
+        </div>
+        <script>
+    
+            let eye = document.getElementById("eye");
+            let pass = document.getElementById("pass");
+        
+            eye.onclick = function(){
+                if(pass.type == "password"){
+                    pass.type = "text";
+                    eye.src =" eye.png";
+                  
+                }else{
+                    pass.type = "password";
+                    eye.src ="hide.png";
+        
+        
+                }
+            }
+        </script>
+        <br>
+        <br>
+        <div class="Buttons"></div>
+            <button type="button"class="Log-in">Log-in</button>
+        <br>
+        <br>
+        <a href="index.html">back to home page</a>
+
+                </div>
+            </div>
+        </body>

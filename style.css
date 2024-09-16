@@ -1,0 +1,60 @@
+body{
+    background: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.right {
+    background-color: transparent;
+    border-style: solid;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    float: right;
+    width: 25%; 
+    padding: 5px;
+    margin-top:10%;
+    margin-right: 10%; 
+    font-style: italic;
+}
+.right h3{
+    text-decoration: underline;
+
+    
+}
+.input-box img{
+    width:15px;
+    cursor:pointer;
+    outline-color:wheat;
+    
+   
+}
+.right a{
+    color: rgb(0, 133, 250);
+}
+.left{
+width: 300px;
+  height: 20px;
+  margin: 30px ;
+  color: white;
+  position: fixed;
+  top: 150px;
+  left: 15px;
+  font-style: italic;
+}
+.left p{
+    text-decoration: underline;
+}
+
+label{
+    color:aliceblue;
+}
+.cancel{
+    color: aliceblue;
+    background-color: red;
+}
+.signup{
+    color:aliceblue;
+    background-color: green;
+}

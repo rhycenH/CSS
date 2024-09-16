@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGN UP Page</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+    <div class="left">
+        <h1 style="color: aliceblue;">WELCOME BACK!</h1>
+        <h3 style="color: aliceblue;">We're happy to see you! Just log in or Create an account on the right side to make an exciting adventure on our social medias.</h3>
+        <p style="color: aliceblue;">Please enjoy and make sure to follow us on:</p>
+        <div class="icon-holder">
+            <a href="https://www.facebook.com">
+                <img src="fb.jpg" width = "80" height = "80" alt="">
+                <a href="https://www.instagram.com">
+                    <img src="ig.jpg" width = "80" height = "80" alt="">
+                <a href="https://x.com">
+                    <img src="twitter.jpg" width = "80" height = "80" alt=""></a>
+                </div>
+            </div>
+
+    <div class="right">
+        <div class="container">
+        <h1 style="color: aliceblue;">Sign Up</h1>
+        <h3 style="color:rgb(247, 244, 244);">Please fill in this form to create an account.</h3>
+        
+        <label for="email"><b>Email Address:</b></label>
+        <br>
+        <input type="text" placeholder="Enter your email address" name="email" required>
+        <br>
+        <label for="pass">Password: </label>
+        
+        <br>
+        <div class="input-box">
+            <input type="password" id="pass" placeholder="Enter Password">
+          <img src="hide.png" id="eye">
+        </div>
+        <script>
+    
+            let eye = document.getElementById("eye");
+            let pass = document.getElementById("pass");
+        
+            eye.onclick = function(){
+                if(pass.type == "password"){
+                    pass.type = "text";
+                    eye.src =" eye.png";
+                  
+                }else{
+                    pass.type = "password";
+                    eye.src ="hide.png";
+        
+        
+                }
+            }
+        </script>
+       
+       
+       <br>
+<body>
+    
+
+        <label for="pass">Confirm Password: </label>
+        <br>
+        <div class="input-box">
+        <input type="password"  id="password" placeholder="Confirm Password">
+        <img src="hide.png" id="eyeicon">
+       
+        </div>
+
+        <script>
+            let eyeicon = document.getElementById("eyeicon");
+            let password = document.getElementById("password");
+        
+            eyeicon.onclick = function(){
+                if(password.type == "password"){
+                    password.type = "text";
+                    eyeicon.src =" eye.png";
+                  
+                }else{
+                    password.type = "password";
+                    eyeicon.src ="hide.png";
+        
+        
+                }
+            }
+        </script>
+
+        <div class="checkbox">
+            <input type="checkbox"name="title"><label>Remember me</label>
+            </div>
+        <p style="color:rgb(255, 255, 255);">By signing up, you agree to our terms of service & Privacy Policy, including the use of cookie.</p>
+        <div class="Buttons">
+            <button type="button" class="cancel">Cancel</button>
+            <button type="button"class="signup">Sign Up</button>
+            <p style="color: aliceblue;">Already have an account? Just click the log in button</p>
+          <a href="login.html">Log in</a>
+
+        </div>
+        
+    </div>
+    </div> 
+</body>
+</html>
+    </body>
